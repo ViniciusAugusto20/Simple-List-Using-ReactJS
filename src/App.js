@@ -6,7 +6,6 @@ function App() {
   const [repositorys, setRepositorys] = useState([]);
 
   useEffect(() => {
-    //Não pode usar por enquanto
     api.get("/repositories").then((response) => {
       setRepositorys(response.data);
     });
